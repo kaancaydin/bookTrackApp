@@ -1,0 +1,192 @@
+/* SWEETALERT2 KİTAP TEMASI */
+
+/* UYARI POPUP'LARI (Silme, Onay) */
+.my-swal-popup {
+    border-radius: 15px;
+    background: linear-gradient(135deg, #c19a6b 0%, #8b5a2b 100%);
+    color: #5d4037;
+    border: 2px solid rgba(193, 154, 107, 0.5);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.3);
+}
+
+.my-swal-title {
+    color: #5d4037;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(93, 64, 55, 0.1);
+}
+
+.my-swal-confirm {
+    background: linear-gradient(135deg, #ef5350 0%, #c62828 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(198, 40, 40, 0.3);
+    transition: all 0.3s ease;
+}
+
+.my-swal-confirm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(198, 40, 40, 0.4);
+}
+
+.my-swal-cancel {
+    background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(56, 142, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+.my-swal-cancel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
+}
+
+/* BAŞARI POPUP'LARI (Ekleme, Güncelleme) */
+.temali-popup {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
+    color: white;
+    border: 2px solid rgba(129, 199, 132, 0.5);
+    box-shadow: 0 10px 30px rgba(56, 142, 60, 0.3);
+}
+
+.temali-baslik {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.temali-icerik {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.temali-buton {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.temali-buton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* BİLDİRİMLER (Toast - Hata/Başarı) */
+.bildirim {
+    border-radius: 15px;
+    background: linear-gradient(135deg, #c19a6b 0%, #8b5a2b 100%);
+    border: 1px solid rgba(193, 154, 107, 0.5);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.bildirim-yazisi {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* HATA BİLDİRİMLERİ İÇİN */
+.bildirim[style*="background: #710d0dff"] {
+    background: linear-gradient(135deg, #ef5350 0%, #c62828 100%) !important;
+    border: 1px solid rgba(239, 83, 80, 0.5) !important;
+}
+
+.bildirim[style*="background: #710d0dff"] .bildirim-yazisi {
+    color: white !important;
+}
+
+/* BAŞARI BİLDİRİMLERİ İÇİN */
+.bildirim[style*="background: #074c18ff"] {
+    background: linear-gradient(135deg, #81c784 0%, #388e3c 100%) !important;
+    border: 1px solid rgba(129, 199, 132, 0.5) !important;
+}
+
+.bildirim[style*="background: #074c18ff"] .bildirim-yazisi {
+    color: white !important;
+}
+
+/* SWAL İÇERİK */
+.swal2-html-container {
+    color: inherit !important;
+    font-size: 16px;
+}
+
+/*
+
+.my-swal-popup {
+    border-radius: 15px;
+    background: linear-gradient(45deg, #2c45b5, #764ba2);
+    color: white;
+}
+.my-swal-title {
+    color: white;
+}
+.my-swal-confirm,
+.my-swal-cancel {
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.temali-popup {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #2c45b5 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(44, 69, 181, 0.3);
+}
+
+.temali-baslik {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.temali-icerik {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
+
+.temali-buton {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.temali-buton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bildirim{
+    color: white;
+}
+
+.bildirim-yazisis{
+    font-size: 20px;
+}
+
+*/

@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+  gap: 10rem;
+  /*padding: 2rem 1rem; */
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 0.5rem;
+  }
+  .tarih-div {
+    margin-top: 2rem;
+  }
+}
+
+/* INPUT CONTAINER */
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  background: rgba(232, 213, 183, 0.25);
+  border: 1px solid rgba(193, 154, 107, 0.4);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* INPUTLAR */
+.text-input,
+.date-input {
+  height: 3rem;
+  min-height: 44px;
+  line-height: normal;
+  border: 1px solid rgba(193, 154, 107, 0.5);
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #5d4037;
+}
+
+.text-input::placeholder {
+  text-align: center;
+  color: #8d6e63;
+}
+
+/* TÜM BUTONLAR - ANA TEMA */
+button,
+.tarih-div,
+.yazar-div,
+.yayin-div {
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  min-height: 48px;
+  background: linear-gradient(135deg, #c19a6b 0%, #8b5a2b 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 400px; /* width: 100%*/
+  outline: none;
+}
+
+button:hover,
+.tarih-div:hover,
+.yazar-div:hover,
+.yayin-div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+button:focus,
+.tarih-div:focus,
+.yazar-div:focus,
+.yayin-div:focus {
+  outline: none;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+button:active,
+.tarih-div:active,
+.yazar-div:active,
+.yayin-div:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+/* ÖZEL BUTON STİLLERİ */
+/* Sil butonu - Kırmızı tonları */
+
+.kitap .sil {
+  background: linear-gradient(135deg, #e57373 0%, #c62828 100%);
+  box-shadow: 0 4px 15px rgba(198, 40, 40, 0.3);
+}
+
+.kitap .sil:hover {
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.4);
+}
+
+/* Güncelle butonu - Yeşil tonları */
+
+.kitap .guncelle {
+  background: linear-gradient(135deg, #81c784 0%, #388e3c 100%);
+  box-shadow: 0 4px 15px rgba(56, 142, 60, 0.3);
+  margin-top: 0.5rem;
+}
+
+.kitap .guncelle:hover {
+  box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
+}
+
+/* Tümünü Sil butonu - Koyu kırmızı */
+#tumunuSil {
+  background: linear-gradient(135deg, #ef5350 0%, #c62828 100%);
+  box-shadow: 0 4px 15px rgba(198, 40, 40, 0.3);
+  color: white;
+  border: none;
+  margin-top: 1.1rem;
+}
+
+#tumunuSil:hover {
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.4);
+}
+
+/* LİSTE ELEMENTLERİ */
+.liste-div,
+.yazar-div,
+.yayin-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*width: 100%; */
+  width: clamp(350px, 50vw, 400px);
+  margin-top: 1rem;
+}
+
+#zamanGoster,
+#yazarDiv,
+.kitap,
+.zamanaGore,
+.ortakstil,
+.search-item {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(232, 213, 183, 0.25);
+  border: 1px solid rgba(193, 154, 107, 0.4);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(139, 69, 19, 0.25);
+  color: #5d4037;
+}
+
+.kitap {
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.kitap:hover,
+.zamanaGore:hover,
+.ortakstil:hover,
+.search-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(139, 69, 19, 0.35);
+  background: rgba(232, 213, 183, 0.35);
+}
+
+/* KİTAP BİLGİLERİ */
+.kitap-adi {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #5d4037;
+  text-shadow: 0 2px 4px rgba(93, 64, 55, 0.2);
+}
+
+.yazar-adi {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6d4c41;
+}
+
+/* KİTAP İÇİ BUTONLAR */
+.kitap button:hover {
+  transform: scale(1.05);
+}
+
+.kitap-kisim {
+  margin: 0.3rem;
+}

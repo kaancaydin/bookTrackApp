@@ -1,0 +1,58 @@
+{
+  "title": "Kitap Kayıt ve Takip Sistemi",
+  "pages": "Sayfa","page": "Sayfa",
+  "day":"Gün", "days": "Gün",
+  "book": "Kitap", "books": "Kitap", "author": "Yazar",
+  "filterDate": "Tarihe Göre Filtrele", "date":"Tarih",
+  "totalNum": "Toplam Sayfa Sayısı", "totalBooks" :"Okunan kitap sayısı:",
+  "avg": "Ortalama",
+  "readTime": "Okuma Süresi",
+  "placeholders": {
+    "bookName": "Kitap Adı",
+    "authorName": "Yazar Adı",
+    "pageNum": "Sayfa Sayısı",
+    "publisher": "Yayınevi",
+    "search": "Ara..."
+  },
+  "buttons": {
+    "add": "Ekle",
+    "showList": "Listeyi Göster",
+    "hideList": "Listeyi Gizle",
+    "authorList": "Yazar Listesini Göster",
+    "authorListHide": "Yazar Listesini Gizle",
+    "publisherList": "Yayıncı Listesini Göster",
+    "publisherListHide": "Yayıncı Listesini Gizle",
+    "delete": "Sil",
+    "deleteAll": "Tümünü Sil",
+    "edit": "Düzenle",
+    "update": "Güncelle",
+    "cancel": "İptal"
+  },
+  "warnings": {
+    "addBook": "Önce kitap eklemen gerekiyor!",
+    "explanation": "Kitap hakkında değişiklik yapmak istediğiniz özelliğin üstüne tıklayıp değişiklikleri yaptıktan sonra güncelle butonuna basmanız yeterlidir.",
+    "publisherStats" : "Yayınevi istatistikleri hesaplanıyor...",
+    "writerStats" : "Yazar istatistikleri hesaplanıyor...",
+    "missingDate" : "Her iki tarih de girilmeli!" 
+  },
+  "swallfire":{
+    "incompInfo": "Eksik Bilgi!",
+    "fillFields" : "Lütfen tüm alanları doldurun.",
+    "added" : "Başarıyla eklendi!",
+    "bookAdded" : "{{bookName}} adlı kitap başarıyla eklendi!",
+    "sure" : "Emin misiniz?", "yes":"Evet,sil!", "no":"Hayır, iptal",
+    "sureText" : "Tüm kitapları silmek üzeresiniz! Bu işlem geri alınamaz.",
+    "deleted":"Silindi",
+    "deleteOne":"{{bookName}} adlı kitabı silmek üzeresiniz! Bu işlem geri alınamaz.",
+    "deletedOne":"{{bookName}} adlı kitap başarıyla silindi, yeni kitaplar eklemeyi unutma!.",
+    "deletedAll":"Tüm kitaplar başarıyla silindi ama yine de kitap eklemeyi unutma!",
+    "noChange": "Değişiklik Yok!",
+    "noChangeText":"Değişiklik yapmadın ki güncelleme olsun 🤔",
+    "updated":"Güncellendi",
+    "updatedText":"'{{bookName}}' adlı kitap başarıyla güncellendi."
+  },
+  "mic":{
+    "micSpeak":"🎤 Dinliyorum... Konuşun!",
+    "micResult":"''{{searchResult}}'' için sonuç bulunamadı."
+  }
+}

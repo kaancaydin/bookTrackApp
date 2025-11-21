@@ -1,0 +1,109 @@
+/* KAPALI durum - sadece büyüteç görünür */
+.searchbar-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: rgba(219, 217, 217, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 5px;
+  width: 60px; /* KAPALI genişlik */
+  height: 50px;
+  transition: width 1s ease;
+  margin-top: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+/* AÇIK durum - input ve mikrofın görünür */
+.searchbar-container.active {
+  width: 300px; /* AÇIK genişlik */
+}
+
+/* KAPALI durumda input ve mikrofon gizli */
+.searchbar-container .input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 0; /* KAPALI */
+  opacity: 0; /* KAPALI */
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+/* AÇIK durumda input görünür */
+.searchbar-container.active .input {
+  width: 100%; /* AÇIK */
+  opacity: 1; /* AÇIK */
+  margin: 0 50px;
+}
+
+/* KAPALI durumda mikrofon gizli */
+.searchbar-container .mic-icon {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  opacity: 0; /* KAPALI */
+  transition: all 0.5s ease;
+}
+
+/* AÇIK durumda mikrofon görünür */
+.searchbar-container.active .mic-icon {
+  opacity: 1; /* AÇIK */
+}
+
+/* Diğer stiller aynı kalabilir */
+.magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+}
+
+.mic-icon:hover {
+  transform: scale(1.3);
+}
+
+.input::placeholder {
+  color: #ffff;
+}
+
+.mic-icon.listening {
+  animation: pulse 1.5s infinite;
+  background: rgba(255, 107, 107, 0.3);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+  }
+}
+
+.mic {
+  color: white;
+  background-color: rgba(109, 80, 80, 0.3);
+  padding: 1em 2em;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}

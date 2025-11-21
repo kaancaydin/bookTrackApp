@@ -1,0 +1,76 @@
+.tarih-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 0.5rem;
+  text-align: center;
+  width: clamp(350px, 50vw, 400px);
+}
+.tarih-div input {
+  margin-bottom: 1rem;
+}
+.tarih-div button {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.baslikTarih{
+  font-weight: bold;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  letter-spacing: 0.2rem;
+  width: clamp(250px, 100%, 600px);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.date-input {
+  text-align: center;
+}
+
+/* istenirse kapatılabilir */
+.zamanaGore {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: justify;
+  color: #5d4037;
+}
+
+/*
+.tarih {
+  font-size: 1.3rem;
+  color: #8d6e63;
+  margin-bottom: 0.5rem;
+}*/
+.hataTarih{
+    color: rgb(255, 22, 22,0.8);
+    background-color: rgb(33, 2, 2);
+    padding: 0.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(120, 12, 12, 0.3);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px;
+
+}
+
+.hataTarih,.baslikTarih,.bilgiTarih{
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+}
+
+.hataTarih:hover, .bilgiTarih:hover, .baslikTarih:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(42, 85, 48, 0.4);
+}
+
+.bilgiTarih{
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 18px;
+  border-radius: 15px;
+}
+

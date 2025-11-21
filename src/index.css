@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #f5e6d3 0%,
+    #e8d5b7 30%,
+    #d4b483 70%,
+    #c19a6b 100%
+  );
+  color: #5d4037;
+  font-family: "Inter", sans-serif;
+  gap: 0.5rem;
+  line-height: 1.6;
+}
+
+
+/*
+eski arkaplan rengi
+background: linear-gradient(
+    135deg,
+    #a78bfa 0%,
+    #8b5cf6 30%,
+    #7c3aed 70%,
+    #6d28d9 100%
+  );
+buton eski rengi
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  backdrop-filter: blur(10px);
+
+  
+*/

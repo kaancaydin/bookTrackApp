@@ -1,0 +1,58 @@
+{
+  "title": "Book Registration and Tracking System",
+  "page": "Page","pages": "Pages",
+  "day": "Day","days": "Days",
+  "book": "Book", "books": "Books", "author": "Author",
+  "filterDate": "Filter by Date", "date": "Date",
+  "totalNum" : "Total Number of Pages", "totalBooks": "Number of books read",
+  "avg" : "Average",
+  "readTime": "Reading Time",
+  "placeholders": {
+    "bookName": "Book Name",
+    "authorName": "Author Name",
+    "pageNum": "Number of Pages",
+    "publisher": "Publisher",
+    "search": "Search..."
+  },
+  "buttons": {
+    "add": "Add",
+    "showList": "Show List",
+    "hideList": "Hide List",
+    "authorList": "Show Author List",
+    "authorListHide": "Hide Author List",
+    "publisherList": "Show Publisher List",
+    "publisherListHide": "Hide Publisher List",
+    "delete": "Delete",
+    "deleteAll": "Delete All",
+    "edit": "Edit",
+    "update": "Update",
+    "cancel": "Cancel"
+  },
+  "warnings": {
+    "addBook": "You should add a book first!",
+    "explanation": "Simply click on the feature you want to change in the book, make the changes, and then press the update button.",
+    "publisherStats": "Publisher stats are being calculated...",
+    "authorStats": "Author stats are being calculated...",
+    "missingDate": "Both dates must be entered!"
+  },
+  "swallfire":{
+    "incompInfo": "Incomplete information!",
+    "fillFields" : "Please fill in all fields.",
+    "added" : "Successfully added!",
+    "bookAdded" : "The book '{{bookName}}' has been added successfully, don't forget to add new books!",
+    "sure" : "Are you sure?", "yes":"Yes, delete it!", "no": "No, cancel it",
+    "sureText": "You are about to delete all books! This action cannot be undone.",
+    "deleted": "Deleted",
+    "deleteOne": "You are about to delete the book {{bookName}}! This action cannot be undone.",
+    "deletedOne": "The book '{{bookName}}' has been deleted successfully",
+    "deletedAll":"All books have been successfully deleted, but don't forget to add new books!",
+    "noChange": "No changes!",
+    "noChangeText":"You didn't make any changes, so there's no update🤔",
+    "updated":"Updated",
+    "updatedText":"The book '{{bookName}}' has been updated successfully"
+  },
+  "mic":{
+    "micSpeak":"🎤I'm listening...Speak!",
+    "micResult":"No results found for ''{{searchResult}}''."
+  }
+}
