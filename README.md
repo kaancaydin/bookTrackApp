@@ -1,17 +1,28 @@
-# React + Vite
+📚 BookTrack - Personal Library Manager
+A modern web application to manage your personal book collection. Built with React, this app helps you track your reading journey with ease.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+<ul>
+  <li>Add & Manage Books - Keep track of books you've read</li>
+  <li>Smart Filtering - Filter by author, publication date, and publisher</li>
+  <li>Search Functionality - Quickly find specific books in your collection</li>
+  <li>Responsive Design - Works perfectly on desktop and mobile devices</li>
+  <li>Local Storage - Your data stays safe in browser storage</li>
+</ul>
+🛠️ Built With
+React.js
 
-Currently, two official plugins are available:
+CSS3 with modern features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Local Storage API
 
-## React Compiler
+Responsive Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📱 Usage
+Add new books with title, author, and publication date
 
-## Expanding the ESLint configuration
+Use filters to organize your collection
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# bookTrackApp
+Search through your books instantly
+
+Update or remove entries as needed
